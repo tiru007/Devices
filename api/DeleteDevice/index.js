@@ -1,7 +1,8 @@
 const cosmos = require('@azure/cosmos');
-const endpoint = process.env.COSMOS_API_URL;
-const key = process.env.COSMOS_API_KEY;
 const { CosmosClient } = cosmos;
+
+var endpoint = context.bindings.outputDocument.COSMOS_API_URL;
+var key = context.bindings.outputDocument.COSMOS_API_KEY;
 
 const client = new CosmosClient({ endpoint, key });
 const container = client.database("Devices").container("Devices");
