@@ -16,13 +16,15 @@
       "name": "res"
     },
     {
+      "name": "inputDocument",
       "type": "cosmosDB",
       "databaseName": "Devices",
       "collectionName": "Devices",
       "connectionStringSetting": "CosmosDbConnectionString",
       "partitionKey": "/Devices",
       "COSMOS_API_URL": "COSMOS_API_URL",
-      "COSMOS_API_KEY": "COSMOS_API_KEY"
+      "COSMOS_API_KEY": "COSMOS_API_KEY",
+      "direction": "in"
     }
   ]
 }
